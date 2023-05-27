@@ -1,0 +1,168 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+	background-color: gray;
+	
+}
+
+
+header {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+	background-color: white;
+	
+}
+
+img {
+	height: 2.2em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: auto;
+	vertical-align: middle;
+}
+
+
+h1 {
+	color: #B71C1C;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 3.5em;
+	vertical-align: middle;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: #B71C1C;
+}
+
+/*El contenedor de ambas tarjetas con sus operaciones*/
+.contenedor_operaciones {
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-bottom: 2%;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+/*Cada una de las tarjetas con su operación*/
+.operacion {
+	padding: 10px;
+	width: 70%;
+	background-color: #BDBDBD;
+	margin: 3%;
+	flex-direction: row;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 0.5%;
+
+}
+
+/*El ícono de Google que aparece a la izquierda del título de cada tarjeta*/
+.material-icons {
+		display: inline-block;
+		vertical-align: bottom;
+		color: #a60014;
+}
+
+
+.flecha {
+	flex-direction: row;
+	font-size: 60px;
+	align-self: center;
+}
+
+h3 {
+	display: inline-block;
+	color: #a60014;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+	
+}
+
+
+h6 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 0.8em;
+	margin-top: 5px;
+}
+
+
+textarea {
+	height: 100px;
+	resize: none;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+button {
+	background-color: #a60014;
+	width: 100px;
+	height: 30px;
+	color: white;
+	border-style: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.1em;
+
+}
+
+
+
+/*MEDIA QUERIES===============================================================*/
+@media (max-width: 700px) {
+	html body {
+	background-color: white;
+	}
+
+
+	header {
+		margin: 0%;
+		width: 100%;
+	}
+
+	img {
+		height: 1.5em;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: auto;
+		
+	}
+
+	h1 {
+		font-size: 40px;
+		width: 100%;
+		
+	}
+
+	.contenedor_operaciones {
+		margin: 10px 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.operacion {
+		width: 100vw;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+
+	.flecha {
+	flex-direction: column;
+	font-size: 60px;
+	align-self: center;
+	transform: rotate(90deg);
+	margin-bottom: 3%;
+}
+}

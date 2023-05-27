@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="cifrado cesar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <title>Cifrado César</title>
+
+    <!--Tipografías-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
+
+    <!--Íconos de Google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+
+    <!--CSS y JS-->
+    <link rel="stylesheet" href="cipherEstilos.css">
+    <script type="text/javascript" src="cipher.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        
+        <h1><img src="cesar.jpg" alt="Imagen de Julio César"> Cifrado César</h1>
+    </header>
+    
+    <!--Cifrar-->
+    <div class="contenedor_operaciones">
+        <div class="operacion">
+            <i class="material-icons">lock_outline</i>
+            <h3>Cifrar texto</h3>
+            <h6>Introduzca en la caja de abajo el texto a cifrar</h6>
+            <textarea id="cifrar" rows="5" cols="" rows="10"></textarea>
+            
+            <div>
+                <button type="submit" onclick="cifrar()">Cifrar</button>
+                <button type="submit" onclick="borrarCifrar()">Borrar</button>
+            </div>
+        </div>
+
+        <i class="material-icons flecha">compare_arrows</i>
+
+        <!--Descifrar-->
+        <div class="operacion">
+            <i class="material-icons">lock_open</i>
+            <h3>Descifrar texto</h3>
+            <h6>Introduzca en la caja de abajo el texto a descifrar</h6>
+            <textarea id="descifrar" rows="5" cols="" rows="10"></textarea>
+            
+            <div>
+                <button type="submit" onclick="descifrar()">Descifrar</button>
+                <button type="submit" onclick="borrarDescifrar()">Borrar</button>
+            </div>
+        </div>
+
+    </div>    
+
+</body>
+
+
+<!--Para vaciar las cajas si se recarga la página-->
+<script>
+    borrarCifrar();
+    borrarDescifrar();
+</script>
+
+
+</html>
